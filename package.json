@@ -21,7 +21,9 @@
     "predeploy": "cd example && npm install && npm run build",
     "deploy": "gh-pages -d example/build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "lodash.debounce": "^4.0.8"
+  },
   "peerDependencies": {
     "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0",
@@ -29,6 +31,7 @@
   },
   "devDependencies": {
     "@types/jest": "^23.1.5",
+    "@types/lodash.debounce": "^4.0.4",
     "@types/react": "^16.3.13",
     "@types/react-dom": "^16.0.5",
     "babel-core": "^6.26.3",
@@ -38,6 +41,7 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts-ts": "^2.16.0",
+    "react-testing-library": "^5.0.0",
     "rollup": "^0.62.0",
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-commonjs": "^9.1.3",
