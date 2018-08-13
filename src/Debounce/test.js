@@ -14,9 +14,9 @@ test("A debounced onChange handler of a text input", async () => {
   const spy = jest.fn();
 
   const { getByTestId } = render(
-    <Debounce call={spy} watit={10}>
-      {({ call }) => (
-        <input data-testid="text-input" type="text" onChange={call} />
+    <Debounce function={spy} watit={10}>
+      {({ debounced }) => (
+        <input data-testid="text-input" type="text" onChange={debounced} />
       )}
     </Debounce>
   );

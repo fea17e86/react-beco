@@ -14,24 +14,24 @@ function getDebounceOptions({
 }
 
 interface InjectedProps {
-  call?: Function;
+  debounced?: Function;
 }
 
 interface Props extends DebounceSettings {
   children(props: InjectedProps): JSX.Element;
-  call?: Function;
+  function?: Function;
   wait?: number;
 }
 
 class Debounce extends PureComponent<Props> {
   debouncedCall = debounce(
-    this.props.call,
+    this.props.function,
     this.props.wait,
     getDebounceOptions(this.props)
   );
 
   render() {
-    return this.props.children({ call: this.debouncedCall });
+    return this.props.children({ debounced: this.debouncedCall });
   }
 }
 

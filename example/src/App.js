@@ -8,16 +8,16 @@ export default class App extends Component {
       <div>
         <Debounce
           wait={300}
-          call={value => {
+          function={value => {
             console.log("call", value);
           }}
         >
-          {({ call }) => (
+          {({ debounced }) => (
             <input
               type="text"
               onChange={e => {
                 console.log("onChange", e.target.value);
-                call(e.target.value);
+                debounced(e.target.value);
               }}
             />
           )}

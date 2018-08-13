@@ -1,4 +1,4 @@
-# react-beco
+# React Be(haviour) Co(mponents)
 
 > A collection of React components providing specific behaviour
 
@@ -13,15 +13,13 @@ npm install --save react-beco
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import * as React from "react";
 
-import MyComponent from 'react-beco'
+import MyComponent from "react-beco";
 
 class Example extends React.Component {
-  render () {
-    return (
-      <MyComponent />
-    )
+  render() {
+    return <MyComponent />;
   }
 }
 ```
