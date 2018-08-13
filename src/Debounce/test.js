@@ -1,7 +1,7 @@
 import React from "react";
 import { render, fireEvent } from "react-testing-library";
 
-import Debounce from "../Debounce";
+import Debounce from "./index";
 
 function changeText(input, newText) {
   if (input) {

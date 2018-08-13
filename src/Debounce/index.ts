@@ -1,5 +1,5 @@
 import { PureComponent } from "react";
-import { DebounceSettings } from "../node_modules/@types/lodash";
+import { DebounceSettings } from "../../node_modules/@types/lodash";
 const debounce = require("lodash.debounce");
 
 function getDebounceOptions({
